@@ -1,0 +1,1 @@
+In this assignment is going to visualize the shot data of NBA players by using “shot charts” for a handful of players from the Golden State Warriors, as well as other summaries and visualizations.
