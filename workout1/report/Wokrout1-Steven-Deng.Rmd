@@ -15,6 +15,7 @@ knitr::include_graphics("../images/gsw-shot-charts.png")
 
 ```{r, echo=FALSE}
 library(dplyr)
+library(knitr)
 ```
 
 ##Two Point Effectiveness
@@ -22,42 +23,50 @@ library(dplyr)
 ```{r, echo=FALSE}
 shots <- read.csv("../data/shots-data.csv", stringsAsFactors = FALSE)
 dat <- shots[shots$shot_type == "2PT Field Goal", ]
-arrange(
+kable(
+  arrange(
   summarise(
     group_by(dat, name),
     total = n(),
     made = sum(shot_made_flag == "shot_yes"),
     perc_made = 100 * made / total
     ), desc(perc_made)
+), caption = "Two Point Effectiveness"
 )
+
 ```
 
 ##Three Point Effectiveness
 
 ```{r, echo=FALSE}
 dat <- shots[shots$shot_type == "3PT Field Goal", ]
-arrange(
+kable(
+  arrange(
   summarise(
     group_by(dat, name),
     total = n(),
     made = sum(shot_made_flag == "shot_yes"),
     perc_made = 100 * made / total
     ), desc(perc_made)
+), caption = "Three Point Effectiveness"
 )
 ```
 
 ##Point Effectiveness
 
 ```{r, echo=FALSE}
-arrange(
+kable(
+  arrange(
   summarise(
     group_by(shots, name),
     total = n(),
     made = sum(shot_made_flag == "shot_yes"),
     perc_made = 100 * made / total
     ), desc(perc_made)
+), caption = "Overall Point Effectiveness"
 )
 ```
+
 ##Introduction
 
 As everyone like NBA, this workout is going to explore the performance of five players from GSW. The purpose is to visualize their shot performance by analyzing 2 point, 3 point and overall point shooting.

@@ -5,10 +5,6 @@ Steven Deng
 
 <img src="../images/gsw-shot-charts.png" width="80%" style="display: block; margin: auto;" />
 
-``` r
-library(dplyr)
-```
-
     ## 
     ## Attaching package: 'dplyr'
 
@@ -23,38 +19,35 @@ library(dplyr)
 Two Point Effectiveness
 -----------------------
 
-    ## # A tibble: 5 x 4
-    ##   name           total  made perc_made
-    ##   <chr>          <int> <int>     <dbl>
-    ## 1 Andre Iguodala   210   134      63.8
-    ## 2 Kevin Durant     643   390      60.7
-    ## 3 Stephen Curry    563   304      54.0
-    ## 4 Klay Thompson    640   329      51.4
-    ## 5 Draymond Green   346   171      49.4
+| name           |  total|  made|  perc\_made|
+|:---------------|------:|-----:|-----------:|
+| Andre Iguodala |    210|   134|    63.80952|
+| Kevin Durant   |    643|   390|    60.65319|
+| Stephen Curry  |    563|   304|    53.99645|
+| Klay Thompson  |    640|   329|    51.40625|
+| Draymond Green |    346|   171|    49.42197|
 
 Three Point Effectiveness
 -------------------------
 
-    ## # A tibble: 5 x 4
-    ##   name           total  made perc_made
-    ##   <chr>          <int> <int>     <dbl>
-    ## 1 Klay Thompson    580   246      42.4
-    ## 2 Stephen Curry    687   280      40.8
-    ## 3 Kevin Durant     272   105      38.6
-    ## 4 Andre Iguodala   161    58      36.0
-    ## 5 Draymond Green   232    74      31.9
+| name           |  total|  made|  perc\_made|
+|:---------------|------:|-----:|-----------:|
+| Klay Thompson  |    580|   246|    42.41379|
+| Stephen Curry  |    687|   280|    40.75691|
+| Kevin Durant   |    272|   105|    38.60294|
+| Andre Iguodala |    161|    58|    36.02484|
+| Draymond Green |    232|    74|    31.89655|
 
 Point Effectiveness
 -------------------
 
-    ## # A tibble: 5 x 4
-    ##   name           total  made perc_made
-    ##   <chr>          <int> <int>     <dbl>
-    ## 1 Kevin Durant     915   495      54.1
-    ## 2 Andre Iguodala   371   192      51.8
-    ## 3 Klay Thompson   1220   575      47.1
-    ## 4 Stephen Curry   1250   584      46.7
-    ## 5 Draymond Green   578   245      42.4
+| name           |  total|  made|  perc\_made|
+|:---------------|------:|-----:|-----------:|
+| Kevin Durant   |    915|   495|    54.09836|
+| Andre Iguodala |    371|   192|    51.75202|
+| Klay Thompson  |   1220|   575|    47.13115|
+| Stephen Curry  |   1250|   584|    46.72000|
+| Draymond Green |    578|   245|    42.38754|
 
 Introduction
 ------------
