@@ -1,0 +1,79 @@
+---
+title: "introduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(binomial)
+```
+
+#Bin Choose
+calculates the number of combinations in which k successes can occur in n trials
+```{r}
+bin_choose(5,3)
+```
+
+#Bin Variable
+return the binomial variables
+```{r}
+bin_variable(5, 0.5)
+```
+
+#Bin Probability
+calculates the probability in which k successes can occur in n trials
+```{r}
+bin_probability(3, 5, 0.5)
+```
+
+#Bin Mean
+return the mean of the binomial distribution
+```{r}
+bin_mean(5, 0.5)
+```
+
+#Bin Variance
+return the variance of the binomial distribution
+```{r}
+bin_variance(5, 0.5)
+```
+
+#Bin Mode
+return the mode of the binomial distribution
+```{r}
+bin_mode(5, 0.5)
+```
+
+#Bin Skewness
+return the skewness of the binomial distribution
+```{r}
+bin_skewness(5, 0.5)
+```
+
+#Bin Kurtosis
+return the kurtosis of the binomial distribution
+```{r}
+bin_kurtosis(5, 0.5)
+```
+
+#Bin Distribution
+return the distribution of success
+```{r}
+bin_distribution(5, 0.5)
+```
+
+#Bin Cumulative
+return the distribution of success with cumulative probability
+```{r}
+bin_cumulative(5, 0.5)
+```
